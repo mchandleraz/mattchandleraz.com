@@ -1,0 +1,17 @@
+{
+  "name": "mattchandleraz2014",
+  "version": "0.1.0",
+  "authors": [
+    "mchandleraz <info@mattchandleraz.com>"
+  ],
+  "description": "Portfolio for Matt Chandler",
+  "dependencies": {
+    "modernizr": "~2.6.2",
+    "jquery": "~1.10.2",
+    "font-awesome": "~4.0.3"
+  },
+  "devDependencies": {
+    "sass-bootstrap": "~3.0.0",
+    "holderjs": "~2.2.0"
+  }
+}

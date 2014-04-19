@@ -1,0 +1,310 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+$brand-primary:         #e54140;
+$brand-success:         #6cc5c1;
+$brand-warning:         #66635d;
+$brand-danger:          #262626;
+$brand-info:            #f7ebd5;
+
+.browsehappy {
+    color: #000;
+    margin: 0.2em 0;
+    background: #ccc;
+    padding: 0.2em 0;
+}
+
+a {
+    color: darken($brand-warning, 10%);
+    &:hover {
+        color: $brand-primary;
+    }
+}
+
+.text-muted {
+    color: inherit;
+    opacity: 0.25;
+}
+
+.media, .media .media {
+    margin-bottom: 15px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+
+    /* Make the masthead heading the same height as the navigation */
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 40px;
+        padding-bottom: 19px;
+
+        text-align: left;
+    }
+
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: darken($brand-warning, 10%);
+    border-top: 1px solid #e5e5e5;
+}
+    .fa {
+        margin-right: 0.33em;
+    }
+
+/* Main marketing message */
+.jumbotron {
+    z-index: 5555;
+    text-align: center;
+    position: relative;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e5e5e5;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.25);
+
+    .container {
+        z-index: 9999;
+        text-align: left;
+        position: relative;
+    }
+
+    .bg-layer {
+        opacity: 0.25;
+        z-index: 8888;
+        background: transparent url(../images/bg-header.png);
+
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+    }
+
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 40px 0;
+
+    :first-child {
+        margin-top: 0px;
+    }
+
+}
+
+.mockup {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+    .mockup-mobile {
+
+    }
+    .mockup-tablet {
+        margin: 1em 0 1em 2em;
+    }
+    .mockup-desktop {
+        margin: 0 0 1em 0;
+    }
+
+.navbar-mcaz {
+    color: white;
+    margin-bottom: 0;
+    border-radius: 0;
+    border-color: transparent;
+    background-color: $brand-danger;
+
+    .navbar-header {
+        margin-left: 0px;
+    }
+
+    .navbar-nav > .active > a,
+    .navbar-nav > .active > a:hover,
+    .navbar-nav > .active > a:focus {
+        background-color: $brand-success;
+    }
+
+    .navbar-nav > li > a:hover,
+    .navbar-nav > li > a:focus {
+        color: white;
+    }
+
+    .navbar-brand {
+        padding: 0;
+        color: #fff;
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+}
+
+#sidebar {
+    margin-top: 2em;
+}
+
+.home {
+
+    .jumbotron,
+    .navbar-toggle:hover,
+    .navbar-toggle:focus,
+    .navbar-nav > .active > a,
+    .navbar-nav > .active > a:hover,
+    .navbar-nav > .active > a:focus {
+        color: white;
+        background-color: $brand-primary;
+    }
+
+    .jumbotron .bg-layer {
+        opacity: 0.125;
+    }
+
+}
+
+.about-page {
+
+    .jumbotron,
+    .navbar-toggle:hover,
+    .navbar-toggle:focus,
+    .navbar-nav > .active > a,
+    .navbar-nav > .active > a:hover,
+    .navbar-nav > .active > a:focus {
+        background-color: $brand-success;
+    }
+
+    #availability {
+        margin: 2em auto;
+    }
+
+}
+
+.portfolio-detail {
+
+    .jumbotron {
+        padding: 0;
+        height: 14px;
+    }
+
+    .jumbotron,
+    .navbar-toggle:hover,
+    .navbar-toggle:focus,
+    .navbar-nav > .active > a,
+    .navbar-nav > .active > a:hover,
+    .navbar-nav > .active > a:focus {
+        color: $brand-danger;
+        background-color: $brand-warning;
+    }
+
+}
+
+.contact-page {
+    
+    .jumbotron,
+    .navbar-toggle:hover,
+    .navbar-toggle:focus,
+    .navbar-nav > .active > a,
+    .navbar-nav > .active > a:hover,
+    .navbar-nav > .active > a:focus {
+        background-color: $brand-info; color: white;
+    }
+
+    .navbar-nav > .active > a,
+    .navbar-nav > .active > a:hover,
+    .navbar-nav > .active > a:focus {
+        color: $brand-danger;
+    }
+
+    .jumbotron .bg-layer {
+        opacity: 0.5;
+    }
+
+}
+
+#vcard {
+    margin-top: 1em;
+}
+
+.thumbnail {
+    display: inline-block;
+}
+
+.tags {
+
+    ul {
+        padding: 0;
+    }
+
+    .label {
+        margin: 0.33em;
+        display: inline-block;
+    }
+
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+    #sidebar {
+        margin: initial;
+    }
+    .navbar-mcaz {
+        
+        .navbar-header {
+            margin-left: 15px;
+        }
+
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    #portfolio {
+
+        .media {
+            height: 465px;
+            position: relative;
+
+            img {
+                bottom: 0px;
+                position: absolute;
+            }
+
+        }
+
+    }
+
+    #sidebar {
+        h4 {
+            br {
+                display: none;
+            }
+        }
+    }
+    
+}
