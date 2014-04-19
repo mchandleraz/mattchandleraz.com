@@ -52,9 +52,10 @@ gulp.task('html', ['styles', 'scripts'], function () {
 gulp.task('images', function () {
     return gulp.src('app/images/**/*')
         .pipe($.cache($.imagemin({
-            optimizationLevel: 3,
+            optimizationLevel: 0,
             progressive: true,
-            interlaced: true
+            interlaced: true,
+            pngquant: true
         })))
         .pipe(gulp.dest('dist/images'))
         .pipe($.size());
@@ -76,6 +77,11 @@ gulp.task('fonts', function () {
 // Clean
 gulp.task('clean', function () {
     return gulp.src(['dist/styles', 'dist/scripts', 'dist/images', 'dist/fonts'], { read: false }).pipe($.clean());
+});
+
+// Deep Clean
+gulp.task('deepClean', function () {
+    return gulp.src('dist/**', { read: false }).pipe($.clean());
 });
 
 // Build

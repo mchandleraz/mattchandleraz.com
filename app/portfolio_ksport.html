@@ -27,8 +27,8 @@
         <!-- endbuild -->
 
     </head>
-    <body class="home">
-        <!--[if lt IE 10]>
+    <body class="portfolio-detail" data-spy="scroll" data-target=".navbar-mcaz">
+        <!--[if lt IE 9]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
@@ -36,7 +36,7 @@
             <div class="container">
                 <div class="navbar-header">
                     <h3 class="text-muted navbar-brand">Matt Chandler<br>Front-End Web Developer</h3>
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mcaz-navbar-collapse-1">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -44,11 +44,11 @@
                     </button>
                 </div>
 
-                <div class="collapse navbar-collapse" id="mcaz-navbar-collapse-1">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav pull-right">
-                        <li class="active"><a href="/">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="/about.html">About</a></li>
-                        <li><a href="/about.html#portfolio">Portfolio</a></li>
+                        <li class="active"><a href="/about.html#portfolio">Portfolio</a></li>
                         <li><a href="/contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -56,33 +56,48 @@
         </nav>
 
         <div class="jumbotron">
-            <div class="container">
-                <h1>Hello.</h1>
-            </div>
             <div class="bg-layer"></div>
         </div>
 
         <div class="container">
 
             <div class="row marketing">
-                <div class="col-sm-9">
-                    <h1 class="h3">I'm Matt.</h1>
-                    <p>I'm a front-end web developer from Phoenix, AZ. I write HTML5, CSS3, JavaScript and even a little PHP. I specialize in semantic, responsive, mobile-first development and I want your project to load faster and be more usable than the competitors.</p>
-                    <p>While you're here, find out more about my <a href="/about.html">skills and experience</a>, check out <a href="/about.html#portfolio">some of my work</a>, or find out <a href="/contact.html">how we can work together.</a></p>
+                <div class="col-sm-8 media">
+                    <h1 class="h3 summary">Project Summary</h1>
+                    <p>Ksport was looking for an updated look and lots of new functionality from their website. Through knowledge of their target demographic, I was able to deliver a feature-rich website that was more aligned with the brand, and gave Ksport staff the tools needed to succesfully maintain their website.</p>
+                    
+                    <a href="http://www.ksportusa.com/" target="_blank" class="btn btn-success">Visit Website</a>
+
+                    <div id="mockups" class="row marketing">
+                        <img class="mockup mockup-mobile" src="/images/portfolio/ksport-desktop.png" alt="">
+                    </div>
                 </div>
-                <div class="col-sm-3" id="sidebar">
-                    <h4>Freelance <br>Availability</h4>
-                    <h4><span class="label label-success">Available</span></h4>
-                    <p>I'm currently available to solve your web development woes.</p>
-                        <p><a href="/contact.html">Get in touch</a>.</p>
+                <div class="col-sm-4">
+                        <h3 class="h5">Technologies</h3>
+                    <aside class="well tags">
+                        <ul>
+                            <li class="label label-info">WordPress</li>
+                            <li class="label label-info">CSS3</li>
+                            <li class="label label-info">HTML5</li>
+                            <li class="label label-info">jQuery</li>
+                        </ul>
+                    </aside>
+                        <h4 class="h5">Freelance Availability</h4>
+                    <aside class="well">
+                        <h4 class="h4">
+                            <span class="label label-success">Available</span>
+                        </h4>
+                        <p>I'm currently available to solve your web development woes. <a href="/contact.html">Get in touch</a>.</p>
+                    </aside>
                 </div>
             </div>
 
             <div class="footer">
-                <p><i class="fa fa-twitter"></i><a href="http://twitter.com/mchandleraz" target="_blank">@mchandleraz</a> || <i class="fa fa-github"></i><a href="http://github.com/mattchandleraz" target="_blank">@mattchandleraz</a> || <i class="fa fa-envelope"></i><a href="mailto:info@mattchandleraz.com">info@mattchandleraz.com</a></p>
+                <p><i class="fa fa-twitter"></i><a href="http://twitter.com/mchandleraz" target="_blank">@mchandleraz</a> || <i class="fa fa-github"></i><a href="http://guthub.com/mattchandleraz" target="_blank">@mattchandleraz</a> || <i class="fa fa-envelope"></i><a href="mailto:info@mattchandleraz.com">info@mattchandleraz.com</a></p>
             </div>
 
         </div>
+
 
         <!-- build:js scripts/vendor.js -->
         <script src="scripts/plugins/jrespond.0.1.0.min.js"></script>
@@ -117,6 +132,5 @@
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
-
 </body>
 </html>

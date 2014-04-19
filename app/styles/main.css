@@ -6349,22 +6349,10 @@ a:hover {
 /* Supporting marketing content */
 .marketing {
   margin: 40px 0;
+  line-height: 1.6;
 }
 .marketing :first-child {
   margin-top: 0px;
-}
-
-.mockup {
-  float: left;
-  margin: 0 1em 1em 0;
-}
-
-.mockup-tablet {
-  margin: 1em 0 1em 2em;
-}
-
-.mockup-desktop {
-  margin: 0 0 1em 0;
 }
 
 .navbar-mcaz {
@@ -6436,6 +6424,26 @@ a:hover {
   background-color: #66635d;
 }
 
+#mockups {
+  text-align: center;
+}
+
+.mockup {
+  max-width: 100%;
+}
+
+.mockup-tablet {
+  margin: 1em 0 1em 2em;
+}
+
+.mockup-desktop {
+  margin: 0 0 1em 0;
+}
+
+.well + .btn {
+  margin-bottom: 20px;
+}
+
 .contact-page .jumbotron,
 .contact-page .navbar-toggle:hover,
 .contact-page .navbar-toggle:focus,
@@ -6496,6 +6504,11 @@ a:hover {
 
   .navbar-mcaz .navbar-header {
     margin-left: 15px;
+  }
+
+  .mockup {
+    float: left;
+    margin: 0 1em 1em 0;
   }
 }
 @media screen and (min-width: 992px) {

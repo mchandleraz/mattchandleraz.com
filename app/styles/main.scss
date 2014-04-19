@@ -96,26 +96,13 @@ a {
 /* Supporting marketing content */
 .marketing {
     margin: 40px 0;
+    line-height: 1.6;
 
     :first-child {
         margin-top: 0px;
     }
 
 }
-
-.mockup {
-    float: left;
-    margin: 0 1em 1em 0;
-}
-    .mockup-mobile {
-
-    }
-    .mockup-tablet {
-        margin: 1em 0 1em 2em;
-    }
-    .mockup-desktop {
-        margin: 0 0 1em 0;
-    }
 
 .navbar-mcaz {
     color: white;
@@ -205,6 +192,27 @@ a {
     }
 
 }
+    #mockups {
+        text-align: center;
+    }
+
+    .mockup {
+        max-width: 100%;
+    }
+        .mockup-mobile {
+
+        }
+        .mockup-tablet {
+            margin: 1em 0 1em 2em;
+        }
+        .mockup-desktop {
+            margin: 0 0 1em 0;
+        }
+
+    .well {}
+    .well + .btn {
+        margin-bottom: 20px;
+    }
 
 .contact-page {
     
@@ -279,6 +287,10 @@ a {
             margin-left: 15px;
         }
 
+    }
+    .mockup {
+        float: left;
+        margin: 0 1em 1em 0;
     }
 }
 
