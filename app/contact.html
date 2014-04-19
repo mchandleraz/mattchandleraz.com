@@ -27,7 +27,7 @@
         <!-- endbuild -->
 
     </head>
-    <body class="contact-page">
+    <body data-template=="contact-page" class="contact-page">
         <!--[if lt IE 9]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -35,7 +35,7 @@
         <nav class="navbar navbar-default navbar-mcaz" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <h3 class="text-muted navbar-brand">Matt Chandler<br>Front-End Web Developer</h3>
+                    <h3 class="text-muted navbar-brand"><a href="/index.html">Matt Chandler<br>Front-End Web Developer</a></h3>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav pull-right">
+                    <ul class="nav navbar-nav">
                         <li><a href="/">Home</a></li>
                         <li><a href="/about.html">About</a></li>
                         <li><a href="/about.html#portfolio">Portfolio</a></li>
@@ -70,24 +70,22 @@
                     <figure class="vcard" id="vcard-lastfirst-idnum123" itemscope="itemscope" itemtype="http://www.data-vocabulary.org/Person/" title="Matt Chandler">
                             <span class="fn"><h1 class="h4">Matt Chandler</h1></span>
                             <span class="title" itemprop="title">Front End Web Developer</span>
-                            <p><a href="http://twitter.com/mchandleraz" target="_blank">@mchandleraz</a></p>
-                            <p><a href="http://guthub.com/mattchandleraz" target="_blank">@mattchandleraz</a></p>
-                            <p><a href="mailto:info@mattchandleraz.com">info@mattchandleraz.com</a></p>
                             <div class="vcard">
                                 <div class="adr" itemprop="address" itemscope="itemscope" itemtype="http://data-vocabulary.org/Address/">
                                     <!-- City --><span class="locality" itemprop="locality">Phoenix</span>,
-                                    <!-- State --><span class="region" itemprop="region" title="Florida">AZ</span>
-                                    <!-- Zip --><span class="postal-code" itemprop="postal-code" title="32303-9329">85004</span>
+                                    <!-- State --><span class="region" itemprop="region" title="Arizona">AZ</span>
+                                    <!-- Zip --><span class="postal-code" itemprop="postal-code" title="85007">85004</span>
                                 </div> <!--/ .adr -->
                             </div> <!--/ .vcard -->
+                            <i class="fa fa-twitter"></i><a href="http://twitter.com/mchandleraz" target="_blank">@mchandleraz</a>
+                            <i class="fa fa-github"></i><a href="http://guthub.com/mattchandleraz" target="_blank">@mattchandleraz</a>
+                            <i class="fa fa-envelope"></i><a href="mailto:info@mattchandleraz.com">info@mattchandleraz.com</a>
                     </figure>
                     
                 </div>
                 <div class="col-sm-3" id="sidebar">
                     <h4>Freelance <br>Availability</h4>
-                    <h4 class="h4">
-                        <span class="label label-success">Available</span>
-                    </h4>
+                    <h4 class="label label-success">Available</h4>
                     <p>I'm currently available to solve your web development woes. <a href="/contact.html">Get in touch</a>.</p>
                 </div>
             </div>
@@ -98,12 +96,12 @@
 
         </div>
 
-
+        <script src="bower_components/holderjs/holder.js"></script>
+        
         <!-- build:js scripts/vendor.js -->
         <script src="scripts/plugins/jrespond.0.1.0.min.js"></script>
         <!-- bower:js -->
         <script src="bower_components/jquery/jquery.js"></script>
-        <script src="bower_components/holderjs/holder.js"></script>
         <script src="bower_components/sass-bootstrap/js/affix.js"></script>
         <script src="bower_components/sass-bootstrap/js/alert.js"></script>
         <script src="bower_components/sass-bootstrap/js/dropdown.js"></script>

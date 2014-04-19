@@ -27,7 +27,7 @@
         <!-- endbuild -->
 
     </head>
-	<body class="portfolio-detail" data-spy="scroll" data-target=".navbar-mcaz">
+	<body data-template="portfolio-detail" data-template="portfolio-detail" class="portfolio-detail" data-spy="scroll" data-target=".navbar-mcaz">
 		<!--[if lt IE 9]>
 			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
@@ -35,7 +35,7 @@
 		<nav class="navbar navbar-default navbar-mcaz" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
-					<h3 class="text-muted navbar-brand">Matt Chandler<br>Front-End Web Developer</h3>
+					<h3 class="text-muted navbar-brand"><a href="/index.html">Matt Chandler<br>Front-End Web Developer</a></h3>
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
@@ -45,7 +45,7 @@
 				</div>
 
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav pull-right">
+					<ul class="nav navbar-nav">
 						<li><a href="/">Home</a></li>
 						<li><a href="/about.html">About</a></li>
 						<li class="active"><a href="/about.html#portfolio">Portfolio</a></li>
@@ -64,7 +64,7 @@
 			<div class="row marketing">
 				<div class="col-sm-8 media">
 					<h1 class="h3 summary">Project Summary</h1>
-					<p>The Arizona Rattlers needed a new web presence for the 2013 season, and had specific functionality goals in mind. We worked together to achieve the functionality, refresh the look, and incorporate the Rattlers 2013 season branding strategy into their online efforts.</p>
+					<p>The RIESTER C#/.NET team and I partnered up to develop a microsite to promote one of the “Best Valley Pool Parties.” Using a combination of proprietary and third-party APIs, JavaScript, and HTML5 client-side storage I was able to deliver a highly performant, mobile-first responsive experience.</p>
 					<div class="row marketing">
 						<img class="mockup mockup-mobile" src="/images/portfolio/release-desktop.png" alt="">
 						<img class="mockup mockup-tablet" src="/images/portfolio/release-mobile-landscape.png" alt="">
@@ -75,14 +75,16 @@
 					<aside class="well tags">
 						<h3 class="h5">Technologies</h3>
 						<ul>
-							<li class="label label-info">WordPress</li>
+							<li class="label label-info">AJAX</li>
 							<li class="label label-info">CSS3</li>
+							<li class="label label-info">.NET</li>
+							<li class="label label-info">API</li>
 							<li class="label label-info">HTML5</li>
 							<li class="label label-info">jQuery</li>
 							<li class="label label-info">Responsive Web Design</li>
 						</ul>
 					</aside>
-					<a href="http://azrattlers.com/" class="btn btn-success">Visit Website</a>
+					<a href="http://releasevip.com/" class="btn btn-success">Visit Website</a>
 					<div class="well">
 						<h4>Freelance <br>Availability</h4>
 						<h4 class="h4">
@@ -99,11 +101,12 @@
 
 		</div>
 
-		<!-- build:js scripts/vendor.js -->
+        <script src="bower_components/holderjs/holder.js"></script>
+        
+        <!-- build:js scripts/vendor.js -->
         <script src="scripts/plugins/jrespond.0.1.0.min.js"></script>
         <!-- bower:js -->
         <script src="bower_components/jquery/jquery.js"></script>
-        <script src="bower_components/holderjs/holder.js"></script>
         <script src="bower_components/sass-bootstrap/js/affix.js"></script>
         <script src="bower_components/sass-bootstrap/js/alert.js"></script>
         <script src="bower_components/sass-bootstrap/js/dropdown.js"></script>

@@ -27,7 +27,7 @@
         <!-- endbuild -->
 
     </head>
-    <body class="about-page" data-spy="scroll" data-target=".navbar-mcaz">
+    <body data-template="about-page" class="about-page" data-spy="scroll" data-target=".navbar-mcaz">
         <!--[if lt IE 9]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -35,7 +35,7 @@
         <nav class="navbar navbar-default navbar-mcaz" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <h3 class="text-muted navbar-brand">Matt Chandler<br>Front-End Web Developer</h3>
+                    <h3 class="text-muted navbar-brand"><a href="/index.html">Matt Chandler<br>Front-End Web Developer</a></h3>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav pull-right">
+                    <ul class="nav navbar-nav">
                         <li><a href="/">Home</a></li>
                         <li class="active"><a href="/about.html">About</a></li>
                         <li><a href="/about.html#portfolio">Portfolio</a></li>
@@ -69,11 +69,11 @@
                     <h1 class="h3">About</h1>
                     <p>As a Front-End Developer, I specialize in developing mobile-first responsive web designs with semantic markup and styling using HTML5/CSS3, and progressive enhancement with JavaScript (via jQuery where appropriate). I've worked extensively with WordPress as a blogging platform as well as a CMS.</p>
                     <p>I've worked on projects from e-mail newsletters to database-driven CMS-powered websites for businesses. I'm the founder and creator of <a href="http://gumpshun.io/">Gumpshun</a>, an HTML5 webapp for vintage motorcycle enthusiasts.</p>
-                    <p>I use modern web development tools like Yeoman, Bootstrap, Ember, and Grunt to build quickly and efficiently. This means your project ships on time, works and looks great across devices, and <a href="/about.html#process">you save money</a>.</p>
+                    <p>I use modern web development tools like Yeoman, Bootstrap, Ember, and <span class="strikethrough">Grunt</span> Gulp.js to build quickly and efficiently. This means your project ships on time, works and looks great across devices, and <a href="/about.html#process">you save money</a>.</p>
 
                     <div id="availability">
                         <h4>Freelance Availability</h4>
-                        <h4><span class="label label-success">Available</span></h4>
+                        <h4 class="label label-success">Available</h4>
                         <p>I'm currently available to solve your web development woes. <a href="/contact.html">Get in touch</a>.</p>
                     </div>
 
@@ -124,10 +124,10 @@
                             <p>The RIESTER C#/.NET team and I partnered up to develop a microsite to promote one of the “Best Valley Pool Parties.” Using a combination of proprietary and third-party APIs, JavaScript, and HTML5 client-side storage I was able to deliver a highly performant, mobile-first responsive experience.</p>
                         </div>
                         <div class="col-sm-4">
-                            <a href="/portfolio_tsr-release.html"><img src="holder.js/200x200" alt="[...]"></a>
+                            <a href="/portfolio_tsr-release.html"><img src="images/portfolio/release.jpg" alt="[...]"></a>
                         </div>
                     </article>
-                    <article class="row marketing">
+                    <!-- <article class="row marketing">
                         <div class="col-sm-8">
                             <a href="/portfolio_btcd-cignal.html"><h1 class="h3">BTCD - The Cignal</h1></a>
                             <p>The Cignal is the first tobacco-cessation campaign from the Arizona Department of Health Services Bureau of Tobacco &amp; Chronic Disease that targets youth and young adult smokers. By increasing interactivity and delivering content tailored to millenials, we nearly doubled the time an average user spends engaged with the tobacco cessation messaging.</p>
@@ -135,14 +135,14 @@
                         <div class="col-sm-4">
                             <a href="/portfolio_btcd-cignal.html"><img src="holder.js/200x200" alt="[...]"></a>
                         </div>
-                    </article>
+                    </article> -->
                     <article class="row marketing">
                         <div class="col-sm-8">
                             <a href="/portfolio_voskos.html"><h1 class="h3">Voskos</h1></a>
                             <p><span class="uppercase">Voskos</span><sup>&reg;</sup> came to <a href="http://www.riester.com/">RIESTER</a> looking for a more comprehensive CMS solution and a complete front-end makeover. As lead developer for this project, I used WordPress backed by custom post types to implement an easier-to-manager CMS.</p>
                         </div>
                         <div class="col-sm-4">
-                            <a href="/portfolio_voskos.html"><img src="holder.js/200x200" alt="[...]"></a>
+                            <a href="/portfolio_voskos.html"><img src="images/portfolio/voskos.jpg" alt="[...]"></a>
                         </div>
                     </article>
                     <article class="row marketing">
@@ -180,12 +180,13 @@
             </div>
 
         </div>
+        
+        <script src="bower_components/holderjs/holder.js"></script>
 
         <!-- build:js scripts/vendor.js -->
         <script src="scripts/plugins/jrespond.0.1.0.min.js"></script>
         <!-- bower:js -->
         <script src="bower_components/jquery/jquery.js"></script>
-        <script src="bower_components/holderjs/holder.js"></script>
         <script src="bower_components/sass-bootstrap/js/affix.js"></script>
         <script src="bower_components/sass-bootstrap/js/alert.js"></script>
         <script src="bower_components/sass-bootstrap/js/dropdown.js"></script>

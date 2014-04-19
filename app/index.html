@@ -13,11 +13,11 @@
 
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
         <!-- endbower -->
         <!-- endbuild -->
 
         <!-- build:css styles/main.css -->
-        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
         
@@ -27,7 +27,7 @@
         <!-- endbuild -->
 
     </head>
-    <body class="home">
+    <body data-template="home" class="home">
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -35,7 +35,7 @@
         <nav class="navbar navbar-default navbar-mcaz" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <h3 class="text-muted navbar-brand">Matt Chandler<br>Front-End Web Developer</h3>
+                    <h3 class="text-muted navbar-brand"><a href="/index.html">Matt Chandler<br>Front-End Web Developer</a></h3>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mcaz-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="collapse navbar-collapse" id="mcaz-navbar-collapse-1">
-                    <ul class="nav navbar-nav pull-right">
+                    <ul class="nav navbar-nav">
                         <li class="active"><a href="/">Home</a></li>
                         <li><a href="/about.html">About</a></li>
                         <li><a href="/about.html#portfolio">Portfolio</a></li>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="col-sm-3" id="sidebar">
                     <h4>Freelance <br>Availability</h4>
-                    <h4><span class="label label-success">Available</span></h4>
+                    <h4 class="label label-success">Available</h4>
                     <p>I'm currently available to solve your web development woes.</p>
                         <p><a href="/contact.html">Get in touch</a>.</p>
                 </div>
@@ -84,11 +84,12 @@
 
         </div>
 
+        <script src="bower_components/holderjs/holder.js"></script>
+
         <!-- build:js scripts/vendor.js -->
         <script src="scripts/plugins/jrespond.0.1.0.min.js"></script>
         <!-- bower:js -->
         <script src="bower_components/jquery/jquery.js"></script>
-        <script src="bower_components/holderjs/holder.js"></script>
         <script src="bower_components/sass-bootstrap/js/affix.js"></script>
         <script src="bower_components/sass-bootstrap/js/alert.js"></script>
         <script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
