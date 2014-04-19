@@ -1,6 +1,7 @@
+'use strict';
 var mcaz = mcaz || {};
 
-mcaz["_breakpoints"] = jRespond([
+mcaz._breakpoints = window.jRespond([
     {
         label: 'base',
         enter: 0,
@@ -25,5 +26,14 @@ mcaz["_breakpoints"] = jRespond([
 ]);
 
 mcaz.breakpoint = function () {
-	return mcaz["_breakpoints"].getBreakpoint();
-}
+	return mcaz._breakpoints.getBreakpoint();
+};
+
+mcaz.config = {
+	viewport: mcaz.breakpoint(),
+	template: document.querySelector('body').dataset.template
+};
+
+$(window).on('load resize', function () {
+    mcaz.breakpoint();
+});
