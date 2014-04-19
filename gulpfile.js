@@ -28,6 +28,12 @@ gulp.task('scripts', function () {
         .pipe($.jshint.reporter('default'))
         .pipe($.size());
 });
+    gulp.task('scripts-main', function () {
+        return gulp.src('app/scripts/main.js')
+            .pipe($.jshint('.jshintrc'))
+            .pipe($.jshint.reporter('default'))
+            .pipe($.size());
+    });
 
 // HTML
 gulp.task('html', ['styles', 'scripts'], function () {
