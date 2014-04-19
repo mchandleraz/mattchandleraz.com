@@ -6290,6 +6290,10 @@ a:hover {
   margin-bottom: 15px;
 }
 
+.strikethrough {
+  text-decoration: line-through;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -6365,6 +6369,9 @@ a:hover {
 .navbar-mcaz .navbar-header {
   margin-left: 0px;
 }
+.navbar-mcaz .navbar-header h3 {
+  margin-top: 0;
+}
 .navbar-mcaz .navbar-nav > .active > a,
 .navbar-mcaz .navbar-nav > .active > a:hover,
 .navbar-mcaz .navbar-nav > .active > a:focus {
@@ -6408,6 +6415,19 @@ a:hover {
 }
 .about-page #availability {
   margin: 2em auto;
+}
+.about-page #availability h4 {
+  float: left;
+}
+.about-page #availability .label {
+  margin: 0 auto;
+  margin-left: 1em;
+  font-size: 1em;
+  position: relative;
+  bottom: 1px;
+}
+.about-page #availability p {
+  clear: both;
 }
 
 .portfolio-detail .jumbotron {
@@ -6462,8 +6482,14 @@ a:hover {
   opacity: 0.5;
 }
 
-#vcard {
-  margin-top: 1em;
+.vcard .vcard {
+  margin-bottom: 1em;
+}
+.vcard .fa {
+  margin-left: 0.33em;
+}
+.vcard .fa-twitter {
+  margin-left: 0;
 }
 
 .thumbnail {
@@ -6504,6 +6530,9 @@ a:hover {
 
   .navbar-mcaz .navbar-header {
     margin-left: 15px;
+  }
+  .navbar-mcaz .navbar-nav {
+    float: right;
   }
 
   .mockup {
