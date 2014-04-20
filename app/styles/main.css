@@ -6283,7 +6283,7 @@ a:hover {
 
 .text-muted {
   color: inherit;
-  opacity: 0.25;
+  opacity: 0.5;
 }
 
 .media, .media .media {
@@ -6383,9 +6383,11 @@ a:hover {
 }
 .navbar-mcaz .navbar-brand {
   padding: 0;
-  color: #fff;
   font-size: 24px;
   line-height: 1.5;
+}
+.navbar-mcaz .navbar-brand a {
+  color: #fff;
 }
 
 #sidebar {

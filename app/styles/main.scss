@@ -24,7 +24,7 @@ a {
 
 .text-muted {
     color: inherit;
-    opacity: 0.25;
+    opacity: 0.5;
 }
 
 .media, .media .media {
@@ -137,9 +137,13 @@ a {
 
     .navbar-brand {
         padding: 0;
-        color: #fff;
         font-size: 24px;
         line-height: 1.5;
+
+        a {
+            color: #fff;
+        }
+
     }
 
 }
