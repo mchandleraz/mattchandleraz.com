@@ -35,5 +35,7 @@ mcaz.config = {
 };
 
 $(window).on('load resize', function () {
-    mcaz.breakpoint();
+    /* Update the viewport */
+    // TODO: Add throttle/debounce
+    mcaz.config.viewport = mcaz.breakpoint();
 });
