@@ -17,6 +17,8 @@ $brand-info:            #f7ebd5;
 
 a {
     color: darken($brand-warning, 10%);
+    text-decoration: underline;
+
     &:hover {
         color: $brand-primary;
     }
@@ -124,6 +126,10 @@ a {
 
     }
 
+    .navbar-nav > .active > a {
+        text-decoration: none;
+    }
+
     .navbar-nav > .active > a,
     .navbar-nav > .active > a:hover,
     .navbar-nav > .active > a:focus {
@@ -142,6 +148,7 @@ a {
 
         a {
             color: #fff;
+            text-decoration: none;
         }
 
     }

@@ -6276,6 +6276,7 @@ td.visible-print {
 
 a {
   color: #4b4945;
+  text-decoration: underline;
 }
 a:hover {
   color: #e54140;
@@ -6372,6 +6373,9 @@ a:hover {
 .navbar-mcaz .navbar-header h3 {
   margin-top: 0;
 }
+.navbar-mcaz .navbar-nav > .active > a {
+  text-decoration: none;
+}
 .navbar-mcaz .navbar-nav > .active > a,
 .navbar-mcaz .navbar-nav > .active > a:hover,
 .navbar-mcaz .navbar-nav > .active > a:focus {
@@ -6388,6 +6392,7 @@ a:hover {
 }
 .navbar-mcaz .navbar-brand a {
   color: #fff;
+  text-decoration: none;
 }
 
 #sidebar {
